@@ -1,0 +1,32 @@
+{
+  "version": "21.0.0",
+  "files": {
+    "3b1e429fc8690bd6b40c7247ba21dfa85b26fce158068b6f473a0d5e4aacdfed": {
+      "source": {
+        "path": "asset.3b1e429fc8690bd6b40c7247ba21dfa85b26fce158068b6f473a0d5e4aacdfed",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "3b1e429fc8690bd6b40c7247ba21dfa85b26fce158068b6f473a0d5e4aacdfed.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "69d8fa6ccbd10ad00fed42ce87db301b0ab6d7f6539f551d65b067f3b2a50222": {
+      "source": {
+        "path": "GalileoInfraStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "69d8fa6ccbd10ad00fed42ce87db301b0ab6d7f6539f551d65b067f3b2a50222.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
